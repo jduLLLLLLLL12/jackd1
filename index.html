@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neighborhood Picker — Find Your Perfect Neighborhood</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Neighborhood Picker</h1>
+    <p class="subtitle">Tell us how you live. We'll tell you where to live.</p>
+  </header>
+
+  <main>
+    <!-- Step 1: City Selection -->
+    <section id="step-city" class="step active">
+      <h2>Pick a city</h2>
+      <div id="city-grid" class="city-grid"></div>
+    </section>
+
+    <!-- Step 2: Lifestyle Preferences -->
+    <section id="step-preferences" class="step">
+      <h2>What matters to you?</h2>
+      <p class="step-description">Drag each slider to rate how important these are in your daily life.</p>
+      <div id="sliders-container" class="sliders-container"></div>
+      <div class="actions">
+        <button id="btn-back-city" class="btn btn-secondary">Back</button>
+        <button id="btn-find" class="btn btn-primary">Find My Neighborhood</button>
+      </div>
+    </section>
+
+    <!-- Step 3: Results -->
+    <section id="step-results" class="step">
+      <div id="results-header">
+        <h2>Your Top Neighborhoods in <span id="results-city-name"></span></h2>
+        <p class="step-description">Ranked by how well they match your lifestyle.</p>
+      </div>
+      <div id="results-list" class="results-list"></div>
+      <div class="actions">
+        <button id="btn-back-prefs" class="btn btn-secondary">Adjust Preferences</button>
+        <button id="btn-start-over" class="btn btn-secondary">Try Another City</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for fun. Data is illustrative — always visit a neighborhood before signing a lease.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
